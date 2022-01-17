@@ -24,7 +24,6 @@ public class MemoryMemberRepositoryTest {
         member.setName("spring");
 
         repository.save(member);
-
         Member result = (repository.findById(member.getId())).get();
         assertThat(member).isEqualTo(result);
 

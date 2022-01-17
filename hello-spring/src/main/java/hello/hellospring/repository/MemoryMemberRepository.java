@@ -19,6 +19,7 @@ public class MemoryMemberRepository implements MemberRepository {
 
         store.put(member.getId(), member);
 
+
         return member;
     }
 
